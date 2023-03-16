@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Academic Page</title>
+	<title>My Fancy Website</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Add any additional meta tags here -->
 
 	<!-- Add any external stylesheets here -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles.css">
 
 	<!-- Add any inline styles here -->
@@ -17,48 +19,68 @@
 
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#research">Research</a></li>
-				<li><a href="#publications">Publications</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<div class="logo">
+				<img src="images/logo.png" alt="Logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
+		<section id="home">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="images/slide1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/slide2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/slide3.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+
+			<div class="intro">
+				<h1>Welcome to my fancy website</h1>
+				<p>Insert some text here that describes your website.</p>
+				<a href="#contact" class="btn btn-primary">Contact Us</a>
+			</div>
+		</section>
+
 		<section id="about">
-			<h1>About</h1>
-			<img src="images/IMG_1184.JPG" alt="Description of the image">
-			<p>Write a brief description of yourself here.</p>
+			<h1>About Us</h1>
+			<p>Insert some information about your company or yourself here.</p>
 		</section>
 
-		<section id="research">
-			<h1>Research</h1>
-			<p>Write a summary of your research interests and current projects here.</p>
-		</section>
-
-		<section id="publications">
-			<h1>Publications</h1>
-			<ul>
-				<li><a href="#">Publication 1</a></li>
-				<li><a href="#">Publication 2</a></li>
-				<li><a href="#">Publication 3</a></li>
-			</ul>
-		</section>
-
-		<section id="contact">
-			<h1>Contact</h1>
-			<p>Provide your contact information here, such as your email address or social media links.</p>
-		</section>
-	</main>
-
-	<footer>
-		<p>Copyright © Your Name</p>
-	</footer>
-
-	<!-- Add any external scripts here -->
-	<script src="script.js"></script>
-</body>
-</html>
+		<section id="services">
+			<h1>Our Services</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="service">
+						<i class="fas fa-code fa-5x"></i>
+						<h3>Web Development</h3>
+						<p>Insert some information about this service here.</p>
+					</div>
+				</div
