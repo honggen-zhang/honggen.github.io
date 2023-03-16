@@ -1,86 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Fancy Website</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Add any additional meta tags here -->
-
-	<!-- Add any external stylesheets here -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="styles.css">
-
-	<!-- Add any inline styles here -->
-	<style>
-		/* Your custom styles here */
-	</style>
-</head>
-
-<body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<img src="images/IMG_1184.JPG" alt="Logo">
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<main>
-		<section id="home">
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<img src="images/slide1.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides fade">
-					<img src="images/slide2.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides fade">
-					<img src="images/slide3.jpg" style="width:100%">
-				</div>
-
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			<br>
-
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-				<span class="dot" onclick="currentSlide(3)"></span>
-			</div>
-
-			<div class="intro">
-				<h1>Welcome to my fancy website</h1>
-				<p>Insert some text here that describes your website.</p>
-				<a href="#contact" class="btn btn-primary">Contact Us</a>
-			</div>
-		</section>
-
-		<section id="about">
-			<h1>About Us</h1>
-			<p>Insert some information about your company or yourself here.</p>
-		</section>
-
-		<section id="services">
-			<h1>Our Services</h1>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="service">
-						<i class="fas fa-code fa-5x"></i>
-						<h3>Web Development</h3>
-						<p>Insert some information about this service here.</p>
-					</div>
-				</div
+  <head>
+    <title>Researcher Name - Academic Research</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+	<img src="images/IMG_1184.JPG" alt="Researcher Name Logo" width="200" height="100">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Research Interests</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href="#">Teaching</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <h1>Researcher Name</h1>
+      
+      <section>
+        <h2>Research Interests</h2>
+        <p>Insert a brief summary of your research interests here.</p>
+        <ul>
+          <li>Interest 1</li>
+          <li>Interest 2</li>
+          <li>Interest 3</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Publications</h2>
+        <ul>
+          <li><a href="#">Publication 1</a></li>
+          <li><a href="#">Publication 2</a></li>
+          <li><a href="#">Publication 3</a></li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Teaching</h2>
+        <ul>
+          <li>Course 1</li>
+          <li>Course 2</li>
+          <li>Course 3</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Contact</h2>
+        <p>Insert your contact information here.</p>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; Researcher Name 
+      <script>document.write(new Date().getFullYear())</script>. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
